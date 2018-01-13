@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android = "http://schemas.android.com/apk/res/android"
+ android:layout_width = "match_parent"
+ android:layout_height = "wrap_content"
+ android:orientation = "vertical">
+	
+
+	<LinearLayout
+	 android:layout_width = "match_parent"
+	 android:layout_height = "wrap_content"
+	 android:id="@+id/song_linear">
+		
+		<TextView
+		 android:layout_width = "wrap_content" android:layout_height = "wrap_content"
+		 android:text="Song:"
+		 android:padding="4dp"
+		 android:textSize="18sp"/>
+		
+		<TextView
+		 android:layout_width = "wrap_content" android:layout_height = "wrap_content"
+		 android:text="Sample song name"
+		 android:id="@+id/song_name"
+		 android:padding="4dp"
+		 android:textSize="18sp"/>
+		
+	</LinearLayout>
+	
+	<LinearLayout
+	 android:layout_width = "match_parent"
+	 android:layout_height = "wrap_content"
+	 android:id="@+id/artist_linear"
+	 android:layout_below="@id/song_linear">
+		
+		<TextView
+		 android:layout_width = "wrap_content" android:layout_height = "wrap_content"
+		 android:text="Artist:"
+		 android:padding="4dp"
+		 android:textSize="18sp"/>
+		
+		<TextView
+		 android:layout_width = "wrap_content" android:layout_height = "wrap_content"
+		 android:text="Sample artist name"
+		 android:id="@+id/artist_name"
+		 android:padding="4dp"
+		 android:textSize="18sp"/>
+		
+	</LinearLayout>
+	
+	<View
+	 android:layout_width = "match_parent" android:layout_height = "1dp"
+	 android:background="#F0F0F0"
+	 android:layout_below="@id/artist_linear"/>
+	
+</RelativeLayout>
